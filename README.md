@@ -1,4 +1,3 @@
-oc-plugin-gea
-=============
+# oc-plugin-gea
 
-Gea Informatica (http://www.geasrlsolution.com) Plugin for OctoberCMS
+> Gea Informatica (http://www.geasrlsolution.com) Plugin for OctoberCMS.

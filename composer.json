@@ -1,0 +1,36 @@
+{
+	"name": "alexcarrega/oc-plugin-gea",
+	"description": "Gea Informatica (http://www.geasrlsolution.com) Plugin for OctoberCMS",
+	"type": "library",
+	"keywords": ["october", "cms", "plugin", "axc", "gea", "informatica", "settings"],
+	"homepage": "http://www.alexcarrega.com/p/oc-plugin-gea",
+	"license": "Apache-2.0",
+	"authors": [
+		{
+			"name": "Alex Carrega",
+			"email": "contact@alexcarrega.com",
+			"homepage": "http://www.alexcarrega.com",
+			"role": "developer"
+		}
+	],
+	"support": {
+		"email": "support-oc-plugin-gea@alexcarrega.com",
+		"issues": "https://github.com/alexcarrega/oc-plugin-gea/issues",
+		"wiki": "https://github.com/alexcarrega/oc-plugin-gea/wiki",
+		"forum": "http://www.alexcarrega.com/f/oc-plugin-gea",
+		"source": "https://github.com/alexcarrega/oc-plugin-gea/wiki"
+	},
+	"require": {
+		"php": ">=5.4.0"
+	},
+	"require-dev": {
+		"phpunit/phpunit": "3.7.*",
+		"mockery/mockery": "dev-master",
+		"guzzlehttp/guzzle": "~4.0"
+	},
+	"autoload": {
+		"psr-4": {
+			"AxC\\Gea\\": ""
+		}
+	}
+}
