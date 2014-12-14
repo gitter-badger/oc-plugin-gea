@@ -6,14 +6,14 @@
  * @package \AxC\DataManagement\Components
  */
 
-namespace AxC\Seldac\Components;
+namespace AxC\GEA\Components;
 
-use AxC\Seldac\Models\Settings as SettingsModel;
+use AxC\GEA\Models\Settings as SettingsModel;
 
 /**
- * Seldac component class
+ * GEA component class
  */
-class Seldac extends \Cms\Classes\ComponentBase
+class GEA extends \Cms\Classes\ComponentBase
 {
 	/**
 	 * Return the component details.
@@ -22,8 +22,8 @@ class Seldac extends \Cms\Classes\ComponentBase
 	public function componentDetails()
 	{
 		return [
-			'name'				=> trans('axc.seldac::lang.component.name'),
-			'description'	=> trans('axc.seldac::lang.component.description')
+			'name'				=> trans('axc.gea::lang.component.name'),
+			'description'	=> trans('axc.gea::lang.component.description')
 		];
 	}
 

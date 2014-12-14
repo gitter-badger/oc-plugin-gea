@@ -10,14 +10,14 @@
  * @var array
  */
 $settings_lang = [
-	'description' => 'Configure Seldac settings',
-	'label' => 'Seldac',
+	'description' => 'Configure GEA settings',
+	'label' => 'GEA',
 	'brand' => [
-		'app_name' => ['commentAbove' => '(Readonly - You can modify this value in Seldac Settings / Info / Name)'],
-		'app_tagline' => ['commentAbove' => '(Readonly - You can modify this value in Seldac Settings / Info / Full-Name)'],
+		'app_name' => ['commentAbove' => '(Readonly - You can modify this value in GEA Settings / Info / Name)'],
+		'app_tagline' => ['commentAbove' => '(Readonly - You can modify this value in GEA Settings / Info / Full-Name)'],
 	],
 	'seo_extension' => [
-		'title' => ['comment' => '(Readonly - You can modify this value in Seldac Settings / Info / Name)']
+		'title' => ['comment' => '(Readonly - You can modify this value in GEA Settings / Info / Name)']
 	],
 	'fields' => [
 		'tab' => [

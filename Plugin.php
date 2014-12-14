@@ -3,13 +3,13 @@
 /**
  * @author Alex Carrega <contact@alexcarrega.com>
  * @license http://www.apache.org/licenses/LICENSE-2.0 Apache License, Version 2.0
- * @package \AxC\Seldac
+ * @package \AxC\GEA
  */
 
-namespace AxC\Seldac;
+namespace AxC\GEA;
 
 /**
- * Seldac Plugin Information File
+ * GEA Plugin Information File
  */
 class Plugin extends \System\Classes\PluginBase
 {
@@ -17,7 +17,14 @@ class Plugin extends \System\Classes\PluginBase
 	 * Plugin dependencies.
 	 * @var array
 	 */
-	public $require = ['RainLab.User', 'AxC.Framework'];
+	public $require = [
+		'AnandPatel\SeoExtension',
+		'AxC.AddThis',
+		'AxC.DataManagement',
+		'AxC.Segment',
+		'RainLab.GoogleAnalytics',
+		'RainLab.User'
+	];
 
 	/**
 	 * Returns information about this plugin.
@@ -26,8 +33,8 @@ class Plugin extends \System\Classes\PluginBase
 	public function pluginDetails()
 	{
 		return [
-			'name'				=> 'Seldac',
-			'description'	=> trans('axc.seldac::lang.plugin.description'),
+			'name'				=> 'GEA',
+			'description'	=> trans('axc.gea::lang.plugin.description'),
 			'author'			=> 'Alex Carrega',
 			'icon'				=> 'icon-fire'
 		];
@@ -39,7 +46,7 @@ class Plugin extends \System\Classes\PluginBase
 	 */
 	public function registerComponents()
 	{
-		return ['AxC\Seldac\Components\Seldac' => 'seldac'];
+		return ['AxC\GEA\Components\GEA' => 'gea'];
 	}
 
 /**
@@ -50,10 +57,10 @@ class Plugin extends \System\Classes\PluginBase
 	{
 		return [
 			'settings' => [
-				'label'				=> trans('axc.seldac::lang.settings.label'),
+				'label'				=> trans('axc.gea::lang.settings.label'),
 				'icon'				=> 'icon-fire',
-				'description'	=> trans('axc.seldac::lang.settings.description'),
-				'class'				=> 'AxC\Seldac\Models\Settings',
+				'description'	=> trans('axc.gea::lang.settings.description'),
+				'class'				=> 'AxC\GEA\Models\Settings',
 				'category'		=> \AxC\Framework\Models\Settings::CATEGORY_AXC,
 				'order'				=> 1
 			]
